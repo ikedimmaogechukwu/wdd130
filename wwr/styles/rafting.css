@@ -27,15 +27,10 @@ footer {
     margin: 0 auto;
 }
 
-/* ==========================================================================
-   HEADER SECTION - Updated to CSS Grid
-   ========================================================================== */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
-    /* Logo size on left, Nav takes remaining space */
     align-items: center;
-    /* Vertically align logo and nav */
     padding: 15px 20px;
     background-color: var(--accent-color);
 }
@@ -46,19 +41,14 @@ header > img {
     display: block;
 }
 
-/* NAV SECTION - Updated to Flexbox Row */
 header nav {
     display: flex;
     flex-direction: row;
-    /* Forces links into a horizontal row */
     justify-content: flex-end;
-    /* Pushes links to the far right */
     align-items: center;
     gap: 15px;
-    /* Spaces out individual link boxes */
 }
 
-/* Styles nav links into distinct buttons matching the wireframe */
 header nav a {
     color: var(--heading-color);
     text-decoration: none;
@@ -77,12 +67,8 @@ header nav a:hover {
     border-color: var(--secondary-color);
 }
 
-/* ==========================================================================
-   MAIN & GENERAL TYPOGRAPHY
-   ========================================================================== */
 main {
     padding: 20px 0;
-    /* Left and right padding removed to let sections align with header/footer */
 }
 
 h1,
@@ -99,9 +85,6 @@ p {
     margin-bottom: 15px;
 }
 
-/* ==========================================================================
-   HERO BANNER
-   ========================================================================== */
 .hero {
     position: relative;
     margin-bottom: 30px;
@@ -143,16 +126,12 @@ p {
     margin: 0 0 10px 20px;
 }
 
-/* Generic Fallback Section Styling */
 section {
     background-color: var(--accent-color);
     margin: 30px 0;
     padding: 20px;
 }
 
-/* ==========================================================================
-   HISTORY SECTION - 3-Column CSS Grid
-   ========================================================================== */
 .history-section h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -161,14 +140,12 @@ section {
 .history-grid {
     display: grid;
     grid-template-columns: 1fr 220px 1fr;
-    /* Text, fixed center image space, text */
     gap: 20px;
     align-items: center;
 }
 
 .history-image-box {
     background-color: var(--primary-color);
-    /* Matches the dark accent block from your wireframe */
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -182,9 +159,6 @@ section {
     object-fit: cover;
 }
 
-/* ==========================================================================
-   ADVENTURES GALLERY SECTION - Horizontal Flex Layout
-   ========================================================================== */
 .adventures-section h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -198,7 +172,6 @@ section {
 
 .adventure-gallery figure {
     flex: 1;
-    /* Makes all 5 images capture identical equal structural width */
     margin: 0;
     text-align: center;
     background-color: var(--white-color);
@@ -209,7 +182,6 @@ section {
 .adventure-gallery img {
     width: 100%;
     height: 120px;
-    /* Fixed height ensures smooth row consistency across different images */
     object-fit: cover;
     display: block;
 }
@@ -221,9 +193,6 @@ section {
     color: var(--heading-color);
 }
 
-/* ==========================================================================
-   FOOTER SECTION - Horizontal Right-Aligned Media Icons
-   ========================================================================== */
 footer {
     display: flex;
     justify-content: space-between;
@@ -248,7 +217,6 @@ footer p {
     justify-content: center;
     align-items: center;
     border: 1px solid var(--white-color);
-    /* Optional wireframe visual touch */
     padding: 4px;
     background-color: transparent;
 }
